@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <PreceptDef>
+    <defName>Lovin_Prohibited</defName>
+    <issue>Lovin</issue>
+    <label>prohibited</label>
+    <description>The physical act of lust is always vile, disgusting, and wrong.</description>
+    <impact>High</impact>
+    <displayOrderInIssue>50</displayOrderInIssue>
+    <associatedMemes>
+      <li>PainIsVirtue</li>
+    </associatedMemes>
+    <comps>
+      <li Class="PreceptComp_SelfTookMemoryThought">
+        <eventDef>GotLovin</eventDef>
+        <thought>GotLovin_Abhorrent</thought>
+        <description>Lustful act</description>
+      </li>
+      <li Class="PreceptComp_KnowsMemoryThought">
+        <eventDef>GotLovin</eventDef>
+        <thought>Lovin_Know_Abhorrent</thought>
+      </li>
+    </comps>
+  </PreceptDef>
+
+  <PreceptDef>
+    <defName>Lovin_Horrible</defName>
+    <issue>Lovin</issue>
+    <label>horrible</label>
+    <description>The physical act of lust is vile, though within marriage it is necessary.</description>
+    <impact>High</impact>
+    <displayOrderInIssue>40</displayOrderInIssue>
+    <associatedMemes>
+      <li>PainIsVirtue</li>
+    </associatedMemes>
+    <comps>
+      <li Class="PreceptComp_SelfTookMemoryThought">
+        <eventDef>GotLovin_NonSpouse</eventDef>
+        <thought>GotLovin_Abhorrent</thought>
+        <description>Lustful act with non-spouse</description>
+      </li>
+      <li Class="PreceptComp_KnowsMemoryThought">
+        <eventDef>GotLovin_NonSpouse</eventDef>
+        <thought>Lovin_Know_Abhorrent</thought>
+      </li>
+      <li Class="PreceptComp_SelfTookMemoryThought">
+        <eventDef>GotLovin_Spouse</eventDef>
+        <thought>GotLovin_Disapproved</thought>
+        <description>Lustful act with spouse</description>
+      </li>
+      <li Class="PreceptComp_KnowsMemoryThought">
+        <eventDef>GotLovin_Spouse</eventDef>
+        <thought>Lovin_Know_Disapproved</thought>
+      </li>
+    </comps>
+  </PreceptDef>
+
+  <PreceptDef>
+    <defName>Lovin_SpouseOnly_Strict</defName>
+    <issue>Lovin</issue>
+    <label>spouse only (strict)</label>
+    <description>To make love with another outside of marriage is deeply immoral.</description>
+    <defaultSelectionWeight>1</defaultSelectionWeight>
+    <impact>Low</impact>
+    <displayOrderInIssue>30</displayOrderInIssue>
+    <comps>
+      <li Class="PreceptComp_SelfTookMemoryThought">
+        <eventDef>GotLovin_NonSpouse</eventDef>
+        <thought>GotLovin_Abhorrent</thought>
+        <description>Lustful act with non-spouse</description>
+      </li>
+      <li Class="PreceptComp_KnowsMemoryThought">
+        <eventDef>GotLovin_NonSpouse</eventDef>
+        <thought>Lovin_Know_Abhorrent</thought>
+      </li>
+    </comps>
+  </PreceptDef>
+
+  <PreceptDef>
+    <defName>Lovin_SpouseOnly_Moderate</defName>
+    <issue>Lovin</issue>
+    <label>spouse only (moderate)</label>
+    <description>To make love with another outside of marriage is wrong.</description>
+    <defaultSelectionWeight>1</defaultSelectionWeight>
+    <impact>Low</impact>
+    <displayOrderInIssue>20</displayOrderInIssue>
+    <comps>
+      <li Class="PreceptComp_SelfTookMemoryThought">
+        <eventDef>GotLovin_NonSpouse</eventDef>
+        <thought>GotLovin_Horrible</thought>
+        <description>Lustful act with non-spouse</description>
+      </li>
+      <li Class="PreceptComp_KnowsMemoryThought">
+        <eventDef>GotLovin_NonSpouse</eventDef>
+        <thought>Lovin_Know_Horrible</thought>
+      </li>
+    </comps>
+  </PreceptDef>
+
+  <PreceptDef>
+    <defName>Lovin_SpouseOnly_Mild</defName>
+    <issue>Lovin</issue>
+    <label>spouse only (mild)</label>
+    <description>Though it's understandable to make love with another outside of marriage, it's not a good thing.</description>
+    <defaultSelectionWeight>1</defaultSelectionWeight>
+    <impact>Low</impact>
+    <displayOrderInIssue>10</displayOrderInIssue>
+    <comps>
+      <li Class="PreceptComp_SelfTookMemoryThought">
+        <eventDef>GotLovin_NonSpouse</eventDef>
+        <thought>GotLovin_Disapproved</thought>
+        <description>Lustful act with non-spouse</description>
+      </li>
+      <li Class="PreceptComp_KnowsMemoryThought">
+        <eventDef>GotLovin_NonSpouse</eventDef>
+        <thought>Lovin_Know_Disapproved</thought>
+      </li>
+    </comps>
+  </PreceptDef>
+
+</Defs>

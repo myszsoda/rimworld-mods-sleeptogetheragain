@@ -1,0 +1,17 @@
+<ModMetaData>
+	<name>Share Bed Again</name>
+	<author>MyszSoda</author>
+	<supportedVersions>
+		<li>1.6</li>
+	</supportedVersions>
+	<packageId>MyszSoda.ShareBedAgain</packageId>
+	<loadAfter>
+		<li>Ludeon.RimWorld.Ideology</li>
+	</loadAfter>
+	<url></url>
+	<description>Allow bed sharing with Ideology DLC, regardless of precepts.
+
+In Vanilla pawns can share double bed with mood penalty. In Ideology DLC there are precepts that allow that only within marriage. This mod does allow bed sharing regardless of ideology precepts.
+
+This basically just returns mood penalty for "Sharing a bed" but also allows to trigger normally impossible mood penalty for "Lustful act with non-spouse".</description>
+</ModMetaData>
