@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Patch>
+	<Operation Class="PatchOperationRemove">
+		<xpath>
+			Defs/PreceptDef[
+				defName="Lovin_Prohibited" or
+				defName="Lovin_Horrible" or
+				defName="Lovin_SpouseOnly_Strict" or
+				defName="Lovin_SpouseOnly_Moderate" or
+				defName="Lovin_SpouseOnly_Mild"
+			]/comps/li[@Class="PreceptComp_UnwillingToDo"]
+		</xpath>
+	</Operation>
+</Patch>
